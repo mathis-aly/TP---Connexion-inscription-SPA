@@ -3,161 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="base.css">
   <title>Connexion - SPA</title>
-  <script>
 
-  </script>
-  <style>
 
-    /* CSS réalisé avec l'IA*/
-    /* --- Variables pour les couleurs --- */
-    :root {
-      --primary-color: #08605f; /* Bleu-violet moderne */
-      --primary-hover: #598381;
-      --secondary-color: #6200B3; /* Vert émeraude */
-      --secondary-hover: #8325ff;
-      --bg-color: #F3F4F6;
-      --text-color: #1F2937;
-      --card-bg: #FFFFFF;
-    }
-
-    /* --- Reset de base --- */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    body {
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh; /* Prend toute la hauteur de l'écran */
-      padding: 20px;
-    }
-
-    /* --- Conteneur Principal --- */
-    .container {
-      width: 100%;
-      max-width: 450px; /* Largeur max des cartes */
-      display: flex;
-      flex-direction: column;
-      gap: 30px; /* Espace entre les sections pour l'instant */
-    }
-
-    .main-title {
-      text-align: center;
-      font-size: 2rem;
-      color: var(--text-color);
-      margin-bottom: 10px;
-    }
-
-    /* --- Style des Cartes (Sections) --- */
-    .card {
-      background: var(--card-bg);
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-      text-align: center;
-    }
-
-    .card h2 {
-      margin-bottom: 10px;
-      font-size: 1.5rem;
-      color: #111827;
-    }
-
-    .card p {
-      color: #6B7280;
-      margin-bottom: 20px;
-      font-size: 0.95rem;
-    }
-
-    /* --- Formulaires et Inputs --- */
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px; /* Espace entre les champs */
-      margin-top: 20px;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="password"] {
-      width: 100%;
-      padding: 12px 15px;
-      border: 1px solid #D1D5DB;
-      border-radius: 8px;
-      font-size: 1rem;
-      transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    input[type="text"]:focus,
-    input[type="email"]:focus,
-    input[type="password"]:focus {
-      outline: none;
-      border-color: var(--primary-color);
-      box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2); /* Effet de halo au clic */
-    }
-
-    /* --- Boutons --- */
-    .btn-group {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      margin-top: 20px;
-    }
-
-    .btn, 
-    input[type="submit"] {
-      width: 100%;
-      padding: 12px;
-      border: none;
-      border-radius: 8px;
-      font-size: 1rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: background-color 0.3s ease, transform 0.1s ease;
-    }
-
-    .btn:active, 
-    input[type="submit"]:active {
-      transform: scale(0.98); /* Petit effet d'enfoncement au clic */
-    }
-
-    .btn-primary {
-      background-color: var(--primary-color);
-      color: white;
-    }
-
-    .btn-primary:hover {
-      background-color: var(--primary-hover);
-    }
-
-    .btn-secondary {
-      background-color: var(--secondary-color);
-      color: white;
-    }
-
-    .btn-secondary:hover {
-      background-color: var(--secondary-hover);
-    }
-
-   #dejacompte{
-      margin-top: 10px ;
-    }
-
-    #creercompte{
-      margin-top: 10px ;
-    }
-
-    #logout{
-      margin-bottom: 100px ;
-    }
-  </style>
 </head>
 <body>
   
@@ -169,15 +19,16 @@
      <h3>Bienvenue,<span id="nomUtilisateur">utilisateur</span> </h3>
      <p>Wouuuhou tu es connecté !</p>
      <button id="logout" class="btn btn-primary">Se Déconnecter</button>
-    <img src="/NewAccountAndlogin/TP---Connexion-inscription-SPA/asset/image/Drapeau.jpg">
+     <img src="image/Drapeau.jpg">
+
   </section>
 
     <section id="logpage" class="card">
       <h2>Page d'accueil</h2>
       <p>Choisissez une option pour continuer.</p>
       <div class="btn-group">
-        <button class="btn btn-primary">Se connecter</button>
-        <button class="btn btn-secondary">Créer un compte</button>
+        <button id = "connexion" class="btn btn-primary">Se connecter</button>
+        <button id = "createAccount" class="btn btn-secondary">Créer un compte</button>
       </div>
     </section>
 
@@ -204,6 +55,8 @@
       </form>
     </section>
   </main>
+
+    <script src="base.js"></script>
 
 </body>
 </html>
