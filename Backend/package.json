@@ -2,7 +2,22 @@
   "name": "tp---connexion-inscription-spa",
   "version": "1.0.0",
   "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/mathis-aly/TP---Connexion-inscription-SPA#readme",
+  "bugs": {
+    "url": "https://github.com/mathis-aly/TP---Connexion-inscription-SPA/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathis-aly/TP---Connexion-inscription-SPA.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
   "main": "base.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "accepts": "^2.0.0",
     "ajv": "^8.20.0",
@@ -74,19 +89,5 @@
     "vary": "^1.1.2",
     "wrappy": "^1.0.2"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mathis-aly/TP---Connexion-inscription-SPA.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/mathis-aly/TP---Connexion-inscription-SPA/issues"
-  },
-  "homepage": "https://github.com/mathis-aly/TP---Connexion-inscription-SPA#readme"
+  "devDependencies": {}
 }
