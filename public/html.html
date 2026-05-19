@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="base.css">
+  <title>Connexion - SPA</title>
+
+
+</head>
+<body>
+  
+  <main class="container">
+    <h1 class="main-title">Bienvenue sur l'App</h1>
+
+    <section id="homepage" class="card">
+
+     <h3>Bienvenue,<span id="nomUtilisateur">utilisateur</span> </h3>
+     <p>Wouuuhou tu es connecté !</p>
+     <button id="logout" class="btn btn-primary">Se Déconnecter</button>
+     <img src="image/Drapeau.jpg">
+
+  </section>
+
+    <section id="logpage" class="card">
+      <h2>Page d'accueil</h2>
+      <p>Choisissez une option pour continuer.</p>
+      <div class="btn-group">
+        <button id = "connexion" class="btn btn-primary">Se connecter</button>
+        <button id = "createAccount" class="btn btn-secondary">Créer un compte</button>
+      </div>
+    </section>
+
+    <section id="login" class="card">
+      <h2>Connexion</h2>
+      <form>
+        
+        <input type="email" id="mail" name="email" required placeholder="exemple@mail.com">
+        <input type="password" id="MDP" name="password" required placeholder="Mot de passe">
+        <input type="submit" class="btn btn-primary" id="submit" value="Se connecter">
+      </form>
+      <button id="creercompte" class="btn btn-secondary">Créer un compte</button>
+    </section>
+
+    <section id="newAcc" class="card">
+      <h2>Créer un compte</h2>
+      <form>
+        <input type="text" id="nom" name="nom" required placeholder="Entrer votre nom utilisateur">
+        <input type="email" id="newAccmail" name="email" required placeholder="exemple@mail.com">
+        <input type="password" id="newAccMDP" name="password" required placeholder="Mot de passe">
+        <input type="password" id="newAccMDP2" name="password" required placeholder="Confirmer le mot de passe">
+        <input type="submit" class="btn btn-secondary" id="newAccSub" value="Créer un compte">
+      </form>
+      <button id="dejacompte" class="btn btn-primary">Déjà un compte ?</button>
+    </section>
+  </main>
+
+    <script src="base.js"></script>
+
+</body>
+</html>
